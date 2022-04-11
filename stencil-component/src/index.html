@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/stencil-component.esm.js"></script>
+    <script nomodule src="/build/stencil-component.js"></script>
+  </head>
+  <body style='background-color: #262626;'>
+    <div style="width:50%;">
+      <the-component titulo-tag="Sankhya" opts="data"></the-component>
+    </div>
+  </body>
+</html>
+
+<script>
+  const testData = document.querySelector('the-component');
+  testData.opts = [ 
+    {
+      id:0,
+      nomeOpt: "Opções de display",
+      descOpt: "Opções de layout da tela",
+      subOpts: [{label: 'nem sei', value:'valor'}, {label: 'ja sei', value:'valor'}, {label: 'shakalaka', value:'valor'}, {label: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys', value:'valor'}, {label: 'Hadoken', value:'valor'}],
+      hide: true
+    },
+    {
+      id:1,
+      nomeOpt: "Usuario2",
+      descOpt: "Torrada é ruim pra cacete",
+      subOpts: [{label: 'nem sei', value:'valor'}, {label: 'ja sei', value:'valor'}, {label: 'shakalaka', value:'valor'}],
+      hide: true
+    },
+    {
+      id:2,
+      nomeOpt: "Usuario3",
+      descOpt: "Pamonha",
+      subOpts: [{label: 'nem sei', value:'valor'}, {label: 'ja sei', value:'valor'}],
+      hide: true
+    },
+    {
+      id:3,
+      nomeOpt: "Opções diversas",
+      descOpt: "Configuracoes de carater diverso",
+      subOpts: [{label: 'Mandar todo mundo pra puta que vos pariu', value:'valor'}],
+      hide: true
+    }
+    
+  ];
+</script>
